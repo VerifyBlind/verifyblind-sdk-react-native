@@ -16,6 +16,8 @@ Pod::Spec.new do |s|
   s.source_files = "ios/**/*.{h,m,mm,swift,cpp}"
   s.private_header_files = "ios/**/*.h"
   s.swift_version = "5.9"
+  # Lets the Objective-C++ module import the generated VerifyBlindReactNative-Swift.h.
+  s.pod_target_xcconfig = { "DEFINES_MODULE" => "YES" }
 
   # The native iOS SDK ships as a Swift Package only (no CocoaPods trunk; trunk goes read-only
   # in Dec 2026). React Native 0.75+ can attach a Swift Package to a pod with spm_dependency.

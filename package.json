@@ -115,6 +115,11 @@
     "jsSrcsDir": "src",
     "android": {
       "javaPackageName": "com.verifyblind.reactnative"
+    },
+    "ios": {
+      "modulesProvider": {
+        "VerifyBlindReactNative": "VerifyBlindReactNative"
+      }
     }
   },
   "prettier": {
