@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.authors      = package["author"]
 
   s.platforms    = { :ios => min_ios_version_supported }
-  s.source       = { :git => "https://github.com/VerifyBlind/sdk-react-native.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/VerifyBlind/verifyblind-sdk-react-native.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,mm,swift,cpp}"
   s.private_header_files = "ios/**/*.h"
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   # The native iOS SDK ships as a Swift Package only (no CocoaPods trunk; trunk goes read-only
   # in Dec 2026). React Native 0.75+ can attach a Swift Package to a pod with spm_dependency.
   spm_dependency(s,
-    url: "https://github.com/VerifyBlind/sdk-ios.git",
+    url: "https://github.com/VerifyBlind/verifyblind-sdk-ios.git",
     requirement: { kind: "upToNextMajorVersion", minimumVersion: "2.3.1" },
     products: ["VerifyBlind"]
   )

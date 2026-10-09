@@ -50,14 +50,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VerifyBlind/sdk-react-native.git"
+    "url": "git+https://github.com/VerifyBlind/verifyblind-sdk-react-native.git"
   },
   "author": "VerifyBlind <4041591+VerifyBlind@users.noreply.github.com> (https://github.com/VerifyBlind)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/VerifyBlind/sdk-react-native/issues"
+    "url": "https://github.com/VerifyBlind/verifyblind-sdk-react-native/issues"
   },
-  "homepage": "https://github.com/VerifyBlind/sdk-react-native#readme",
+  "homepage": "https://github.com/VerifyBlind/verifyblind-sdk-react-native#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

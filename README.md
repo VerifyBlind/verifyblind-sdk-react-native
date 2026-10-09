@@ -4,7 +4,7 @@
 
 React Native wrapper for the native VerifyBlind SDKs:
 Android `com.verifyblind:verifyblind-android:1.0.1` (Maven Central) and iOS Swift Package
-`https://github.com/VerifyBlind/sdk-ios` (2.3.1+). It does not reimplement anything: key pair,
+`https://github.com/VerifyBlind/verifyblind-sdk-ios` (2.3.1+). It does not reimplement anything: key pair,
 App Link and decryption all run in the native SDKs.
 
 ---
