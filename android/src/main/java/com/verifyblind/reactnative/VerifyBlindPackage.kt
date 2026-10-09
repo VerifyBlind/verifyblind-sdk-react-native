@@ -5,12 +5,11 @@ import com.facebook.react.bridge.NativeModule
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.module.model.ReactModuleInfo
 import com.facebook.react.module.model.ReactModuleInfoProvider
-import java.util.HashMap
 
-class ReactNativePackage : BaseReactPackage() {
+class VerifyBlindPackage : BaseReactPackage() {
   override fun getModule(name: String, reactContext: ReactApplicationContext): NativeModule? {
-    return if (name == ReactNativeModule.NAME) {
-      ReactNativeModule(reactContext)
+    return if (name == VerifyBlindModule.NAME) {
+      VerifyBlindModule(reactContext)
     } else {
       null
     }
@@ -18,9 +17,9 @@ class ReactNativePackage : BaseReactPackage() {
 
   override fun getReactModuleInfoProvider() = ReactModuleInfoProvider {
     mapOf(
-      ReactNativeModule.NAME to ReactModuleInfo(
-        name = ReactNativeModule.NAME,
-        className = ReactNativeModule.NAME,
+      VerifyBlindModule.NAME to ReactModuleInfo(
+        name = VerifyBlindModule.NAME,
+        className = VerifyBlindModule.NAME,
         canOverrideExistingModule = false,
         needsEagerInit = false,
         isCxxModule = false,

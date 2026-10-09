@@ -1,5 +1,5 @@
 buildscript {
-  ext.ReactNative = [
+  ext.VerifyBlindReactNative = [
     kotlinVersion: "2.0.21",
     minSdkVersion: 24,
     compileSdkVersion: 36
@@ -10,7 +10,7 @@ buildscript {
       return rootProject.ext.get(prop)
     }
 
-    return ReactNative[prop]
+    return VerifyBlindReactNative[prop]
   }
 
   repositories {
@@ -52,4 +52,7 @@ android {
 
 dependencies {
   implementation "com.facebook.react:react-android"
+  // Native VerifyBlind SDK (Maven Central). This module only wraps it.
+  implementation "com.verifyblind:verifyblind-android:1.0.1"
+  implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1"
 }

@@ -1,7 +1,7 @@
 {
   "name": "@verifyblind/react-native",
   "version": "0.1.0",
-  "description": "React Native wrapper for the VerifyBlind Android and iOS SDKs",
+  "description": "React Native wrapper for the VerifyBlind Android and iOS SDKs (zero-knowledge identity verification)",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
   "exports": {
@@ -42,14 +42,18 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "verifyblind",
+    "identity",
+    "age-verification",
+    "zero-knowledge"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VerifyBlind/sdk-react-native.git"
   },
   "author": "VerifyBlind <4041591+VerifyBlind@users.noreply.github.com> (https://github.com/VerifyBlind)",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/VerifyBlind/sdk-react-native/issues"
   },
@@ -106,7 +110,7 @@
     ]
   },
   "codegenConfig": {
-    "name": "ReactNativeSpec",
+    "name": "VerifyBlindReactNativeSpec",
     "type": "modules",
     "jsSrcsDir": "src",
     "android": {
@@ -126,7 +130,7 @@
       "customExportConditions": [
         "require",
         "react-native",
-        "<%- project.sourceCondition -%>"
+        "verifyblind-react-native-source"
       ]
     },
     "modulePathIgnorePatterns": [
