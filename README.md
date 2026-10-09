@@ -260,7 +260,7 @@ yarn example android
 
 On Windows, a deep folder path can break the C++ (CMake/ninja) step with a `mkdir ... No such file
 or directory` error (260-character path limit). Build from a short path, e.g.
-`subst V: <repo>` and run `V:\examplendroid\gradlew.bat assembleDebug`.
+`subst V: <repo>` and run `cd V:\examplendroid && gradlew.bat assembleDebug`.
 
 The example uses the public test partner (`https://test.verifyblind.com/api`, return scheme
 `verifyblinddemo`). It needs the VerifyBlind app on an NFC phone.
