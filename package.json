@@ -57,7 +57,7 @@
   "bugs": {
     "url": "https://github.com/VerifyBlind/verifyblind-sdk-react-native/issues"
   },
-  "homepage": "https://github.com/VerifyBlind/verifyblind-sdk-react-native#readme",
+  "homepage": "https://verifyblind.com/en/developers",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
